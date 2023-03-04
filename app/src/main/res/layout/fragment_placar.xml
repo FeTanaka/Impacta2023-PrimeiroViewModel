@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacarFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/label_timeCasa_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Casa"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/placar_timeCasa_textView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_timeFora_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Fora"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/placar_timeFora_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/placar_timeCasa_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeCasa_3Pontos_button"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_timeCasa_textView" />
+
+    <Button
+        android:id="@+id/timeCasa_3Pontos_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 Pontos"
+        app:layout_constraintBottom_toTopOf="@+id/timeCasa_2Pontos_button"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placar_timeCasa_textView" />
+
+    <Button
+        android:id="@+id/timeCasa_2Pontos_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Pontos"
+        app:layout_constraintBottom_toTopOf="@+id/timeCasa_1Ponto_button"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeCasa_3Pontos_button" />
+
+    <Button
+        android:id="@+id/timeCasa_1Ponto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1 Ponto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeCasa_2Pontos_button" />
+
+    <TextView
+        android:id="@+id/placar_timeFora_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeFora_3Pontos_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/label_timeFora_textView" />
+
+    <Button
+        android:id="@+id/timeFora_3Pontos_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 Pontos"
+        app:layout_constraintBottom_toTopOf="@+id/timeFora_2Pontos_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/placar_timeFora_textView" />
+
+    <Button
+        android:id="@+id/timeFora_2Pontos_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Pontos"
+        app:layout_constraintBottom_toTopOf="@+id/timeFora_1Ponto_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/timeFora_3Pontos_button" />
+
+    <Button
+        android:id="@+id/timeFora_1Ponto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1 Ponto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/timeFora_2Pontos_button" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
